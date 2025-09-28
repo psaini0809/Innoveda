@@ -7,22 +7,22 @@ import Header from "./ui/Header";
 
 function App() {
   return (
-    <div>
+    <div className="w-full">
       <Header />
 
-      <div id="About">
+      <div id="about">
         <About />
       </div>
 
-      <div id="Projects">
+      <div id="projects">
         <Projects />
       </div>
 
-      <div id="Skills">
+      <div id="skills">
         <Skills />
       </div>
 
-      <div id="Contact">
+      <div id="contact">
         <Contact />
       </div>
     </div>

@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { FaFastForward, FaGithubSquare } from "react-icons/fa";
+import { FaFastForward } from "react-icons/fa";
 import { motion, AnimatePresence } from "framer-motion";
 
 function Btn2() {
@@ -10,9 +10,14 @@ function Btn2() {
       className="relative inline-block"
       onMouseEnter={() => setStart(true)}
       onMouseLeave={() => setStart(false)}
+      onTouchStart={() => setStart(true)}   // mobile tap start
+      onTouchEnd={() => setStart(false)}    // mobile tap end
     >
       {/* Button */}
-      <motion.button whileTap={{ scale: 0.8 }} className="cursor-pointer p-2">
+      <motion.button 
+        whileTap={{ scale: 0.8 }} 
+        className="cursor-pointer p-2 bg-black rounded-full"
+      >
         <FaFastForward size={20} color="white" />
       </motion.button>
 

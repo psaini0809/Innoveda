@@ -1,22 +1,21 @@
 import { motion } from "framer-motion";
 import Buttonn from "./Buttonn";
 import Btn2 from "./Btn2";
-import { useState } from "react";
 
 const ImageContainer = ({ imageSource, description }) => {
   return (
-    <motion.div className="image-container cursor-pointer ">
+    <motion.div className="relative cursor-pointer overflow-hidden w-full max-w-[1200px] mx-auto">
+      {/* Image */}
       <motion.img
-        className="image h-[500px] w-full object-cover opacity-80"
-        whileHover={{ opacity: 100 }}
+        className="w-full h-[300px] sm:h-[500px] object-cover opacity-80"
+        whileHover={{ opacity: 1 }}
+        whileTap={{ opacity: 1 }} // mobile tap support
         src={imageSource}
         alt={description}
       />
 
-      <div className="fixed bottom-0 flex flex-row items-center justify-center ">
-        <Buttonn />
-        <Btn2 />
-      </div>
+      {/* Buttons inside image */}
+    
     </motion.div>
   );
 };

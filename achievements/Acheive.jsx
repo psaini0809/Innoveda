@@ -10,11 +10,12 @@ function Certificates() {
         transition={{ duration: 0.5, delay: 0.5, ease: "easeOut" }}
         className="text-7xl font-bold text-black text-center mt-5"
       >
-        Certificates and Acheivements
+        Certificates and Achievements
       </motion.h1>
-      <div.container>
+
+      <div className="container mx-auto mt-8">
         <Card />
-      </div.container>
+      </div>
     </div>
   );
 }

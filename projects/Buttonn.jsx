@@ -10,9 +10,14 @@ function Buttonn() {
       className="relative inline-block"
       onMouseEnter={() => setStart(true)}
       onMouseLeave={() => setStart(false)}
+      onTouchStart={() => setStart(true)}   // mobile support
+      onTouchEnd={() => setStart(false)}    // mobile support
     >
       {/* Button */}
-      <motion.button whileTap={{ scale: 0.8 }} className="cursor-pointer p-2">
+      <motion.button 
+        whileTap={{ scale: 0.8 }} 
+        className="cursor-pointer p-2 bg-black rounded-full"
+      >
         <FaGithubSquare size={30} color="white" />
       </motion.button>
 
