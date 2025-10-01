@@ -24,7 +24,7 @@ function Header() {
             />
           </div>
          <h1 className="font-extrabold text-2xl sm:text-3xl md:text-2xl tracking-tight text-white">
-  Innoveda 
+  Innoveda  
   <span className="font-extrabold text-2xl sm:text-3xl md:text-2xl tracking-tight text-gray-500"> Solutions</span>
 </h1>
         </div>
