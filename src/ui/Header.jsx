@@ -23,9 +23,10 @@ function Header() {
               className="w-12 h-12 sm:w-16 sm:h-16 rounded-full"
             />
           </div>
-          <span className="font-bold text-lg sm:text-xl tracking-wide">
-            Innoveda
-          </span>
+         <h1 className="font-extrabold text-2xl sm:text-3xl md:text-2xl tracking-tight text-white">
+  Innoveda 
+  <span className="font-extrabold text-2xl sm:text-3xl md:text-2xl tracking-tight text-gray-500"> Solutions</span>
+</h1>
         </div>
 
         {/* Desktop Links */}
